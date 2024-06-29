@@ -1,0 +1,38 @@
+description: "Fooocus self host API"
+network:
+  host: 'http://127.0.0.1'
+  port: '8080'
+
+api:
+  text2img_ip: '/v2/generation/text-to-image-with-ip'
+  img_upscale: '/v2/generation/image-upscale-vary'
+  inpaint_outpaint: '/v2/generation/image-inpaint-outpaint'
+  img_prompt: '/v2/generation/image-prompt'
+fooocus:
+  aspect_ratios: ["704*1408",
+                  "768*1344",
+                  "832*1216",
+                  "896*1152",
+                  "960*1088",
+                  "1024*1024",
+                  "1024*960",
+                  "1088*896",
+                  "1152*896",
+                  "1216*832",
+                  "1280*768",
+                  "1344*768",
+                  "1408*704",
+                  "1472*704",
+                  "1536*640",
+                  "1600*640",
+                  "1664*576",
+                  "1728*576"
+                  ]
+  base_model_name: ["juggernautXL_v8Rundiffusion.safetensors",
+                    "animaPencilXL_v310.safetensors",
+                    "realisticStockPhoto_v20.safetensors"]
+  loras: ["logo_v1-000012.safetensors"]
+  style: ["Fooocus V2", "Fooocus Photograph"]
+  perfs: ['Quality', 'Speed', 'Extreme Speed', 'Lightning', 'Hyper-SD']
+saliency_segment:
+  model_path: 'C:\BANGLV\logo-represent\ISNet\weights\isnet-general-use.pth'

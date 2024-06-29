@@ -1,0 +1,7 @@
+*.pth
+*.pt
+*.jpg
+*.jpeg
+*.pkl
+*.txt
+.idea/*
